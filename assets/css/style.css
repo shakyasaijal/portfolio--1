@@ -1,0 +1,268 @@
+/*
+* ====== Header ======
+*/
+.top-nav {
+  padding: 10px;
+}
+
+.top-nav .elements {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.top-nav .logo-container {
+  height: 20px;
+  width: 20px;
+}
+
+.top-nav .logo-container,
+.top-nav .follow-me {
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.top-nav .logo-container img {
+  width: 100%;
+}
+
+.top-nav .follow-me {
+  color: var(--theme-white);
+}
+
+/*
+* ====== Header End ======
+*/
+
+/*
+* ====== Navigation ======
+*/
+.site_menu {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  background-color: var(--theme-black);
+  transition: all 0.3s;
+}
+
+.site_menu * {
+  background-color: var(--theme-black);
+}
+
+.site_menu .content-container {
+  display: flex;
+}
+
+.site_menu .logo-container {
+  flex: 1;
+}
+
+.site_menu .brand_logo {
+  height: 50px;
+  width: 180px;
+}
+
+.site_menu .brand_logo .header_logo {
+  display: inline-block;
+}
+
+.site_menu .brand_logo .header_logo img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.saijal_menu .main_menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.saijal_menu .main_menu ul li a {
+  /* position: relative; */
+  display: block;
+  padding: 17px 0px 18px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.saijal_menu .main_menu ul li:hover a {
+  color: var(--theme-color);
+}
+
+.saijal_menu .main_menu ul li.active a {
+  color: var(--theme-color);
+}
+
+/*
+* ====== Navigation End ======
+*/
+
+/*
+* ====== Header Information ======
+*/
+.welcome {
+  padding: 50px 0px;
+}
+
+.welcome .projects-btn {
+  background-color: var(--theme-color) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--theme-white);
+  border-radius: 6px;
+  line-height: 60px;
+  height: 60px;
+  width: 180px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*
+* ====== Header Information End ======
+*/
+
+/*
+* ====== Introduction ======
+*/
+
+.intro .display_img_container {
+  position: relative;
+  flex: 1;
+}
+
+.intro .display_image {
+  height: 560px;
+}
+
+.intro .display_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.intro .info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.intro .intro_container {
+  flex: 1;
+}
+
+.intro .info_panel {
+  margin-top: 4rem;
+}
+
+.intro .info_panel .info_content {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.intro .info_panel .info_content .info_image {
+  height: 30px;
+  width: 30px;
+}
+
+.intro .info_panel .info_content .info_image img {
+  width: 100%;
+}
+
+.intro .info_data {
+  margin-left: 15px;
+  color: var(--theme-white);
+}
+
+/*
+* ====== Introduction End ======
+*/
+
+/*
+* ====== Blogs ======
+*/
+
+.blogs {
+  background-color: var(--theme-black);
+}
+
+.blogs .content-container * {
+  background-color: var(--theme-black);
+}
+
+
+.blogs .blogs_container {
+  background: var(--theme-bg);
+  margin-top: 4rem;
+}
+
+.blogs .blogs_container .blogs_content {
+  display: flex;
+  padding: 25px;
+  background-color: var(--theme-bg);
+}
+
+.blogs .blogs_container .blogs_content .blogs_img {
+  /* width: 350px; */
+  border-bottom: 1px solid #505050;
+  padding-bottom: 25px;
+}
+
+.blogs .blogs_data {
+  flex: 1;
+  background-color: var(--theme-bg);
+  padding: 35px;
+}
+
+.blogs .blogs_img img {
+  width: 100%;
+}
+
+.blogs h2 {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: var(--theme-white);
+}
+
+.blogs .blogs_title{
+  padding-bottom: 20px;
+}
+
+.blogs .blogs_read{
+  text-align: right;
+  padding-top: 15px;
+}
+
+.blogs .blogs_read a{
+  color: var(--theme-white);
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Montserrat-Light';
+  transition: .3s ease-in-out;
+
+}
+
+.blogs .arrow {
+  font-size: 1.6em;
+  font-family: 'Montserrat-Light';
+}
+
+/*
+* ====== Blogs End ======
+*/
+
+.section-title {
+  text-align: center;
+}
+
+.section-title .design_line::after {
+  margin: 0 auto;
+}
+
+.p-relative {
+  position: relative;
+}
