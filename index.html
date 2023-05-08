@@ -53,7 +53,7 @@
       </div>
     </section>
     <div class="welcome bg-black">
-      <div class="content-container">
+      <div class="content-container header-column">
         <div class="col-1 ft-white header-info section-padding">
           <h1>Hey, I'm Saijal Shakya</h1>
           <p class="pt-1">Full Stack Software Developer</p>
@@ -61,10 +61,43 @@
             <a href="" class="projects-btn">Projects</a>
           </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">
+          <div class="slides" id="slides">
+            <img src="./assets/images/blogs/broadcast.webp" alt="Image 1">
+            <img src="./assets/images/blogs/network.webp" alt="Image 1">
+            <img src="./assets/images/blogs/naive.webp" alt="Image 1">
+            <img src="./assets/images/email.png" alt="Image 1">
+            <img src="./assets/images/phone.png" alt="Image 1">
+            <img src="./assets/images/person.png" alt="Image 1">
+          </div>
+          <button class="prev">Previous</button>
+          <button class="next" id="next">Next</button>
+        </div>
       </div>
     </div>
+    <script>
+      let counter = 1;
 
+      document.getElementById('next').addEventListener("click", () => {
+        let allImages = document.getElementsByClassName('slides')[0].getElementsByTagName('img');
+          for (let i=0;i < allImages.length;i += 2){
+            allImages[i].style.display = "none";
+            if (allImages[i+1]) {
+              allImages[i+1].style.display = "none";
+            }
+          }
+          counter += 1;
+          if (counter > allImages.length/2) {
+            counter = 1;
+          }
+          allImages[2*counter-2].style.display = "block";
+          if (allImages[2*counter-1]) {
+            allImages[2*counter-1].style.display = "block";
+          }
+        });
+
+        document.getElementById('previous').addEventListener("click",)
+    </script>
     <!--Introduction about me-->
     <section class="intro">
       <div class="content-container info section-padding">
@@ -95,6 +128,9 @@
               </div>
               <div class="info_data">saijalshakya@gmail.com</div>
             </div>
+          </div>
+          <div class="download-panel">
+            <a href="" download>Download CV</a>
           </div>
         </div>        
       </div>

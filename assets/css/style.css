@@ -178,6 +178,22 @@
   color: var(--theme-white);
 }
 
+.intro .download-panel a{
+  background-color: var(--theme-color) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--theme-white);
+  border-radius: 6px;
+  line-height: 60px;
+  height: 60px;
+  width: 180px;
+  font-weight: 600;
+  text-align: center;
+}
+
 /*
 * ====== Introduction End ======
 */
@@ -354,4 +370,47 @@ footer .copy-right {
 
 .p-relative {
   position: relative;
+}
+
+.welcome .header-column{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#slides{
+  margin-left: 0px;
+}
+
+.slides img {
+  width: calc(50% - 10px);
+  margin: 0 5px;
+  /* display: none; */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
