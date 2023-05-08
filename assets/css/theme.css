@@ -44,7 +44,7 @@ h1 {
 }
 
 .link-effect:visited{
-    color: red !important;
+    color: rgb(255, 0, 0) !important;
 }
 
 .content-container{
@@ -108,4 +108,18 @@ h1 {
 
 .bg-bg *{
     background-color: var(--theme-bg) !important;
+}
+
+.w-80{
+    width: 80% !important;
+}
+
+.w-140{
+    width: 140% !important;
+}
+
+.hr-center{
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
 }
